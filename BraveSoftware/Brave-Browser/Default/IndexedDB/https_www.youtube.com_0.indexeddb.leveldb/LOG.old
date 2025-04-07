@@ -1,0 +1,48 @@
+2025/04/07-12:28:07.218 1b29f Reusing MANIFEST /home/williamprobyn/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/MANIFEST-000001
+2025/04/07-12:28:07.218 1b29f Recovering log #10
+2025/04/07-12:28:07.223 1b29f Reusing old log /home/williamprobyn/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/000010.log 
+2025/04/07-12:28:08.956 1b29d Level-0 table #15: started
+2025/04/07-12:28:08.979 1b29d Level-0 table #15: 1690686 bytes OK
+2025/04/07-12:28:08.982 1b29d Delete type=0 #10
+2025/04/07-12:28:20.025 1b29e Compacting 1@1 + 1@2 files
+2025/04/07-12:28:20.036 1b29e Generated table #16@1: 330 keys, 76635 bytes
+2025/04/07-12:28:20.036 1b29e Compacted 1@1 + 1@2 files => 76635 bytes
+2025/04/07-12:28:20.041 1b29e compacted to: files[ 0 0 1 0 0 0 0 ]
+2025/04/07-12:41:11.602 1b29e Level-0 table #18: started
+2025/04/07-12:41:11.623 1b29e Level-0 table #18: 1346004 bytes OK
+2025/04/07-12:41:11.629 1b29e Delete type=0 #14
+2025/04/07-12:41:11.629 1b29e Delete type=2 #15
+2025/04/07-12:41:11.629 1b29e Delete type=2 #12
+2025/04/07-12:41:22.697 1b29e Compacting 1@1 + 1@2 files
+2025/04/07-12:41:22.705 1b29e Generated table #19@1: 357 keys, 62337 bytes
+2025/04/07-12:41:22.705 1b29e Compacted 1@1 + 1@2 files => 62337 bytes
+2025/04/07-12:41:22.707 1b29e compacted to: files[ 0 0 1 0 0 0 0 ]
+2025/04/07-12:41:22.707 1b29e Delete type=2 #16
+2025/04/07-12:41:22.707 1b29e Delete type=2 #18
+2025/04/07-13:07:19.246 1b29e Level-0 table #21: started
+2025/04/07-13:07:19.270 1b29e Level-0 table #21: 1452981 bytes OK
+2025/04/07-13:07:19.277 1b29e Delete type=0 #17
+2025/04/07-13:10:10.338 1b29d Compacting 1@1 + 1@2 files
+2025/04/07-13:10:10.349 1b29d Generated table #22@1: 377 keys, 54921 bytes
+2025/04/07-13:10:10.349 1b29d Compacted 1@1 + 1@2 files => 54921 bytes
+2025/04/07-13:10:10.351 1b29d compacted to: files[ 0 0 1 0 0 0 0 ]
+2025/04/07-13:10:10.351 1b29d Delete type=2 #21
+2025/04/07-13:10:10.351 1b29d Delete type=2 #19
+2025/04/07-13:37:27.800 1b29e Level-0 table #24: started
+2025/04/07-13:37:27.826 1b29e Level-0 table #24: 1674474 bytes OK
+2025/04/07-13:37:27.833 1b29e Delete type=0 #20
+2025/04/07-13:38:36.386 1b29e Compacting 1@1 + 1@2 files
+2025/04/07-13:38:36.396 1b29e Generated table #25@1: 412 keys, 58430 bytes
+2025/04/07-13:38:36.396 1b29e Compacted 1@1 + 1@2 files => 58430 bytes
+2025/04/07-13:38:36.402 1b29e compacted to: files[ 0 0 1 0 0 0 0 ]
+2025/04/07-13:38:36.402 1b29e Delete type=2 #22
+2025/04/07-13:38:36.402 1b29e Delete type=2 #24
+2025/04/07-14:12:08.122 1b29e Level-0 table #27: started
+2025/04/07-14:12:08.147 1b29e Level-0 table #27: 1690200 bytes OK
+2025/04/07-14:12:08.154 1b29e Delete type=0 #23
+2025/04/07-14:16:10.565 1b29e Compacting 1@1 + 1@2 files
+2025/04/07-14:16:10.574 1b29e Generated table #28@1: 452 keys, 60584 bytes
+2025/04/07-14:16:10.574 1b29e Compacted 1@1 + 1@2 files => 60584 bytes
+2025/04/07-14:16:10.580 1b29e compacted to: files[ 0 0 1 0 0 0 0 ]
+2025/04/07-14:16:10.580 1b29e Delete type=2 #27
+2025/04/07-14:16:10.580 1b29e Delete type=2 #25

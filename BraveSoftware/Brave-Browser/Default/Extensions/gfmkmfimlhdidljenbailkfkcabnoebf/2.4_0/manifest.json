@@ -1,0 +1,45 @@
+{
+   "author": "Mallowigi",
+   "description": "Monokai Pro Theme",
+   "icons": {
+      "128": "icon.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAm4noTE4mI/O4+eMMdvcYnbKDCwW/fnWJs7mDYnmSBKz3RMAlQdYfnXD/nFmXbT0R1eRdS0Kx/b/LVIo2HInDRPFyM04XnRXR8uFoJfZ7aNiB4AMaX42TTl2VUSn1ra3nRmoeNIDTdMs27WmQSJG8tuIf5q+SZDPEHEs39WYEDtfEI8MDYAgMflDBxJZ2KQAq/uYI17eORJVhtzohmhXQ824zcaV+BTEM7q0lVrdmO57IttRntSZdtuZAyrLisemE8QpdGyhor9ACDkpldgjME6l+RJvjCzHHpkICC+Tl170kxui8GWSp9EldW7JtZ/DCWLN5OseULyvxngf/syfNwQIDAQAB",
+   "manifest_version": 3,
+   "name": "Monokai Pro",
+   "theme": {
+      "colors": {
+         "background_tab": [ 45, 42, 46 ],
+         "background_tab_inactive": [ 64, 62, 65 ],
+         "background_tab_incognito": [ 34, 31, 34 ],
+         "background_tab_incognito_inactive": [ 64, 62, 65 ],
+         "bookmark_text": [ 252, 252, 250 ],
+         "button_background": [ 64, 62, 65 ],
+         "frame": [ 34, 31, 34 ],
+         "frame_inactive": [ 64, 62, 65 ],
+         "frame_incognito": [ 34, 31, 34 ],
+         "frame_incognito_inactive": [ 64, 62, 65 ],
+         "ntp_background": [ 34, 31, 34 ],
+         "ntp_header": [ 64, 62, 65 ],
+         "ntp_link": [ 123, 216, 143 ],
+         "ntp_text": [ 252, 252, 250 ],
+         "omnibox_background": [ 34, 31, 34 ],
+         "omnibox_text": [ 252, 252, 250 ],
+         "tab_background_text": [ 252, 252, 250 ],
+         "tab_background_text_inactive": [ 147, 146, 147 ],
+         "tab_background_text_incognito": [ 252, 252, 250 ],
+         "tab_background_text_incognito_inactive": [ 147, 146, 147 ],
+         "tab_text": [ 255, 255, 255 ],
+         "toolbar": [ 45, 42, 46 ],
+         "toolbar_button_icon": [ 147, 146, 147 ],
+         "toolbar_text": [ 252, 252, 250 ]
+      },
+      "images": {
+         "theme_ntp_background": "wall.png",
+         "theme_tab_background": "tab.png",
+         "theme_toolbar": "topbar.png"
+      }
+   },
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "2.4"
+}
