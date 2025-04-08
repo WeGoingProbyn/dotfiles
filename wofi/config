@@ -1,0 +1,8 @@
+prompt=Search:
+width=50%
+lines=10
+show=drun
+insensitive=true
+term=alacritty
+normal_window=true
+location=center

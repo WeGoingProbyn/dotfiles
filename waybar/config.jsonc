@@ -27,6 +27,7 @@
     "window-rewrite-default": "󰣇",
     "window-rewrite": {
       "class<Kitty>": "",
+      "class<Godot>": "",
       "class<discord>": "",
       "class<steam.*>": "󰓓",
       "class<Spotify>": "",

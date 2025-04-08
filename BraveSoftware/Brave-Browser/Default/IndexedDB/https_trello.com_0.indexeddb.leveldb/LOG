@@ -1,2 +1,3 @@
-2025/04/03-17:02:17.021 24fc Creating DB /home/williamprobyn/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_trello.com_0.indexeddb.leveldb since it was missing.
-2025/04/03-17:02:17.082 24fc Reusing MANIFEST /home/williamprobyn/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_trello.com_0.indexeddb.leveldb/MANIFEST-000001
+2025/04/08-20:27:56.559 a0342 Reusing MANIFEST /home/williamprobyn/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_trello.com_0.indexeddb.leveldb/MANIFEST-000001
+2025/04/08-20:27:56.559 a0342 Recovering log #3
+2025/04/08-20:27:56.564 a0342 Reusing old log /home/williamprobyn/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_trello.com_0.indexeddb.leveldb/000003.log 

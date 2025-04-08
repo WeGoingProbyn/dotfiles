@@ -1,0 +1,6 @@
+2025/04/08-10:31:41.892 3c3a Creating DB /home/williamprobyn/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.hsbc.co.uk_0.indexeddb.leveldb since it was missing.
+2025/04/08-10:31:41.904 3c3a Reusing MANIFEST /home/williamprobyn/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.hsbc.co.uk_0.indexeddb.leveldb/MANIFEST-000001
+2025/04/08-10:31:49.673 3c3b Level-0 table #5: started
+2025/04/08-10:31:49.677 3c3b Level-0 table #5: 3660 bytes OK
+2025/04/08-10:31:49.683 3c3b Delete type=0 #3
+2025/04/08-10:31:49.683 3c3a Manual compaction at level-0 from '\x00\x02\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x03\x00\x00\x00' @ 0 : 0; will stop at (end)

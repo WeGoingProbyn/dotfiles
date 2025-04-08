@@ -1,9 +1,24 @@
-2025/04/07-15:05:11.244 4 Reusing MANIFEST /home/williamprobyn/.config/BraveSoftware/Brave-Browser/Default/Local Storage/leveldb/MANIFEST-000001
-2025/04/07-15:05:11.249 4 Recovering log #176
-2025/04/07-15:05:11.249 4 Reusing old log /home/williamprobyn/.config/BraveSoftware/Brave-Browser/Default/Local Storage/leveldb/000176.log 
-2025/04/07-15:30:01.937 4 Level-0 table #180: started
-2025/04/07-15:30:01.946 4 Level-0 table #180: 23722 bytes OK
-2025/04/07-15:30:01.958 4 Delete type=0 #176
-2025/04/07-16:01:43.639 5 Level-0 table #182: started
-2025/04/07-16:01:43.648 5 Level-0 table #182: 17244 bytes OK
-2025/04/07-16:01:43.658 5 Delete type=0 #179
+2025/04/08-19:43:36.197 4 Reusing MANIFEST /home/williamprobyn/.config/BraveSoftware/Brave-Browser/Default/Local Storage/leveldb/MANIFEST-000001
+2025/04/08-19:43:36.203 4 Recovering log #27
+2025/04/08-19:43:36.203 4 Reusing old log /home/williamprobyn/.config/BraveSoftware/Brave-Browser/Default/Local Storage/leveldb/000027.log 
+2025/04/08-19:44:36.206 5 Level-0 table #31: started
+2025/04/08-19:44:36.211 5 Level-0 table #31: 19920 bytes OK
+2025/04/08-19:44:36.214 5 Delete type=0 #27
+2025/04/08-20:08:12.956 4 Level-0 table #33: started
+2025/04/08-20:08:12.992 4 Level-0 table #33: 432169 bytes OK
+2025/04/08-20:08:12.998 4 Delete type=0 #30
+2025/04/08-20:38:35.854 5 Level-0 table #35: started
+2025/04/08-20:38:35.861 5 Level-0 table #35: 82261 bytes OK
+2025/04/08-20:38:35.867 5 Delete type=0 #32
+2025/04/08-20:38:35.868 5 Compacting 4@0 + 1@1 files
+2025/04/08-20:38:35.891 5 Generated table #36@0: 314 keys, 798474 bytes
+2025/04/08-20:38:35.891 5 Compacted 4@0 + 1@1 files => 798474 bytes
+2025/04/08-20:38:35.897 5 compacted to: files[ 0 1 1 0 0 0 0 ]
+2025/04/08-20:38:35.898 5 Delete type=2 #35
+2025/04/08-20:38:35.898 5 Delete type=2 #28
+2025/04/08-20:38:35.898 5 Delete type=2 #26
+2025/04/08-20:38:35.898 5 Delete type=2 #31
+2025/04/08-20:38:35.898 5 Delete type=2 #33
+2025/04/08-21:28:47.898 5 Level-0 table #38: started
+2025/04/08-21:28:47.906 5 Level-0 table #38: 16542 bytes OK
+2025/04/08-21:28:47.912 5 Delete type=0 #34
