@@ -1,6 +1,0 @@
-2025/04/08-19:43:41.662 a0342 Reusing MANIFEST /home/williamprobyn/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/MANIFEST-000001
-2025/04/08-19:43:41.662 a0342 Recovering log #77
-2025/04/08-19:43:41.664 a0342 Reusing old log /home/williamprobyn/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/000077.log 
-2025/04/08-20:53:11.180 a0342 Level-0 table #82: started
-2025/04/08-20:53:11.205 a0342 Level-0 table #82: 1711383 bytes OK
-2025/04/08-20:53:11.208 a0342 Delete type=0 #77

@@ -1,6 +1,0 @@
-2025/04/08-15:51:27.983 3c3a Creating DB /home/williamprobyn/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_medium.com_0.indexeddb.leveldb since it was missing.
-2025/04/08-15:51:27.995 3c3a Reusing MANIFEST /home/williamprobyn/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_medium.com_0.indexeddb.leveldb/MANIFEST-000001
-2025/04/08-16:03:33.248 3c3a Level-0 table #5: started
-2025/04/08-16:03:33.253 3c3a Level-0 table #5: 22322 bytes OK
-2025/04/08-16:03:33.259 3c3a Delete type=0 #3
-2025/04/08-16:03:33.259 3c3a Manual compaction at level-0 from (begin) .. (end); will stop at (end)

@@ -1,6 +1,0 @@
-2025/04/06-22:36:21.331 d58 Creating DB /home/williamprobyn/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_fontawesome.com_0.indexeddb.leveldb since it was missing.
-2025/04/06-22:36:21.342 d58 Reusing MANIFEST /home/williamprobyn/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_fontawesome.com_0.indexeddb.leveldb/MANIFEST-000001
-2025/04/06-22:43:26.310 d59 Level-0 table #5: started
-2025/04/06-22:43:26.312 d59 Level-0 table #5: 4272 bytes OK
-2025/04/06-22:43:26.314 d59 Delete type=0 #3
-2025/04/06-22:43:26.314 d59 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

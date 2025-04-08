@@ -1,6 +1,0 @@
-2025/04/07-19:02:19.239 8bffe Creating DB /home/williamprobyn/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_account.student-finance.service.gov.uk_0.indexeddb.leveldb since it was missing.
-2025/04/07-19:02:19.244 8bffe Reusing MANIFEST /home/williamprobyn/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_account.student-finance.service.gov.uk_0.indexeddb.leveldb/MANIFEST-000001
-2025/04/07-19:09:53.361 8bfff Level-0 table #5: started
-2025/04/07-19:09:53.393 8bfff Level-0 table #5: 2925509 bytes OK
-2025/04/07-19:09:53.402 8bfff Delete type=0 #3
-2025/04/07-19:09:53.404 8bfff Manual compaction at level-0 from (begin) .. (end); will stop at (end)
