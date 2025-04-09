@@ -1,0 +1,85 @@
+format = """
+$time\
+$username\
+$hostname\
+$directory\
+$git_branch\
+$git_status\
+$python\
+$nodejs\
+$cmd_duration\
+$line_break\
+$character"""
+
+add_newline = false
+
+[character]
+success_symbol = "[➜](bold green)"
+error_symbol = "[✗](bold red)"
+
+[username]
+style_user = "bold fg:#fc9867"
+style_root = "bold fg:#ff6188"
+format = "[$user]($style)@"
+show_always = true
+
+[hostname]
+style = "bold fg:#fc9867"
+format = "[$hostname]($style) "
+
+[directory]
+style = "bold fg:#78dce8"
+truncation_length = 3
+truncation_symbol = "…/"
+read_only = "🔒"
+read_only_style = "fg:#ff6188"
+
+[git_branch]
+symbol = " "
+style = "bold fg:#ff6188"
+format = "[$symbol$branch]($style) "
+
+[git_status]
+style = "fg:#ff6188"
+format = "[$all_status$ahead_behind]($style) "
+
+[time]
+disabled = false
+time_format = "%H:%M"
+style = "bold fg:#ab9df2"
+format = "[$time]($style) "
+
+[cmd_duration]
+min_time = 1000
+style = "bold fg:#a9dc76"
+format = "[⏱ $duration]($style) "
+
+[python]
+symbol = " "
+style = "fg:#ab9df2"
+format = "[$symbol$version]($style) "
+
+[nodejs]
+symbol = "⬢ "
+style = "fg:#7fdbca"
+format = "[$symbol$version]($style) "
+
+[rust]
+symbol = " "
+style = "bold fg:#ff6188"
+format = "[$symbol$version]($style) "
+
+[c]
+symbol = " "
+style = "bold fg:#fc9867"
+format = "[$symbol$version]($style) "
+
+[cpp]
+symbol = " "
+style = "bold fg:#ab9df2"
+format = "[$symbol$version]($style) "
+
+[lua]
+symbol = " "
+style = "bold fg:#7fdbca"
+format = "[$symbol$version]($style) "
