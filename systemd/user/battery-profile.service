@@ -1,0 +1,11 @@
+[Unit]
+Description=PPD battery profile manager
+
+[Service]
+ExecStart=/home/williamprobyn/.config/scripts/ppd-check.sh
+Restart=always
+RestartSec=10
+Type=simple
+
+[Install]
+WantedBy=default.target
