@@ -4,9 +4,6 @@ $username\
 $hostname\
 $directory\
 $git_branch\
-$git_status\
-$python\
-$nodejs\
 $cmd_duration\
 $line_break\
 $character"""
@@ -18,26 +15,27 @@ success_symbol = "[➜](bold green)"
 error_symbol = "[✗](bold red)"
 
 [username]
-style_user = "bold fg:#fc9867"
+style_user = "bold green"
 style_root = "bold fg:#ff6188"
 format = "[$user]($style)@"
 show_always = true
 
 [hostname]
-style = "bold fg:#fc9867"
+style = "bold green"
 format = "[$hostname]($style) "
 
 [directory]
-style = "bold fg:#78dce8"
+style = "bold fg:#ff6188"
 truncation_length = 3
 truncation_symbol = "…/"
 read_only = "🔒"
 read_only_style = "fg:#ff6188"
+format = "[$path]($style)[$read_only]($read_only_style)|"
 
 [git_branch]
-symbol = " "
+symbol = ""
 style = "bold fg:#ff6188"
-format = "[$symbol$branch]($style) "
+format = "[$symbol$branch]($style)| "
 
 [git_status]
 style = "fg:#ff6188"
@@ -46,8 +44,8 @@ format = "[$all_status$ahead_behind]($style) "
 [time]
 disabled = false
 time_format = "%H:%M"
-style = "bold fg:#ab9df2"
-format = "[$time]($style) "
+style = "bold green"
+format = "|[$time]($style)|"
 
 [cmd_duration]
 min_time = 1000
@@ -57,11 +55,6 @@ format = "[⏱ $duration]($style) "
 [python]
 symbol = " "
 style = "fg:#ab9df2"
-format = "[$symbol$version]($style) "
-
-[nodejs]
-symbol = "⬢ "
-style = "fg:#7fdbca"
 format = "[$symbol$version]($style) "
 
 [rust]
@@ -83,3 +76,4 @@ format = "[$symbol$version]($style) "
 symbol = " "
 style = "bold fg:#7fdbca"
 format = "[$symbol$version]($style) "
+
