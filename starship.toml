@@ -52,28 +52,28 @@ min_time = 1000
 style = "bold fg:#a9dc76"
 format = "[⏱ $duration]($style) "
 
-[python]
-symbol = " "
-style = "fg:#ab9df2"
-format = "[$symbol$version]($style) "
-
-[rust]
-symbol = " "
-style = "bold fg:#ff6188"
-format = "[$symbol$version]($style) "
-
-[c]
-symbol = " "
-style = "bold fg:#fc9867"
-format = "[$symbol$version]($style) "
-
-[cpp]
-symbol = " "
-style = "bold fg:#ab9df2"
-format = "[$symbol$version]($style) "
-
-[lua]
-symbol = " "
-style = "bold fg:#7fdbca"
-format = "[$symbol$version]($style) "
-
+# [python]
+# symbol = " "
+# style = "fg:#ab9df2"
+# format = "[$symbol$version]($style) "
+#
+# [rust]
+# symbol = " "
+# style = "bold fg:#ff6188"
+# format = "[$symbol$version]($style) "
+#
+# [c]
+# symbol = " "
+# style = "bold fg:#fc9867"
+# format = "[$symbol$version]($style) "
+#
+# [cpp]
+# symbol = " "
+# style = "bold fg:#ab9df2"
+# format = "[$symbol$version]($style) "
+#
+# [lua]
+# symbol = " "
+# style = "bold fg:#7fdbca"
+# format = "[$symbol$version]($style) "
+#
