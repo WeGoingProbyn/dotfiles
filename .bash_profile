@@ -10,3 +10,7 @@ if [[ -d ~/.bashrc.d ]]; then
     source ~/.bashrc.d/paths.sh
   fi
 fi
+
+# if uwsm check may-start; then
+#   exec uwsm start hyprland.desktop
+# fi

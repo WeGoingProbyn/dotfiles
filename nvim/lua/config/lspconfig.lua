@@ -27,34 +27,45 @@ local on_attach = function(client, bufnr)
 end
 
 -- Update capabilities for nvim-cmp
-local capabilities = require('cmp_nvim_lsp').default_capabilities()
+local capabilities = require("cmp_nvim_lsp").default_capabilities()
 
--- Setup LSP servers
-mason_lspconfig.setup_handlers({
-  function(server_name)
-    lspconfig[server_name].setup {
-      on_attach = on_attach,
-      capabilities = capabilities,
-    }
-  end,
+-- Explicit server setup
+lspconfig.lua_ls.setup({
+  on_attach = on_attach,
+  capabilities = capabilities,
 })
 
--- Diagnostic symbols in the sign column (gutter)
-local signs = { Error = " ", Warn = " ", Hint = " ", Info = " " }
+lspconfig.pyright.setup({
+  on_attach = on_attach,
+  capabilities = capabilities,
+})
 
+lspconfig.clangd.setup({
+  on_attach = on_attach,
+  capabilities = capabilities,
+})
+
+lspconfig.rust_analyzer.setup({
+  on_attach = on_attach,
+  capabilities = capabilities,
+  settings = {
+    ["rust-analyzer"] = {
+      checkOnSave = { command = "clippy" },
+    },
+  },
+})
+
+-- signs
+local signs = { Error = " ", Warn = " ", Hint = " ", Info = " " }
 for type, icon in pairs(signs) do
   local hl = "DiagnosticSign" .. type
   vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = "" })
 end
 
--- Diagnostic configuration
 vim.diagnostic.config({
-  virtual_text = {
-    prefix = '●',
-  },
+  virtual_text = { prefix = "●" },
   signs = true,
   underline = true,
   update_in_insert = false,
   severity_sort = true,
 })
-

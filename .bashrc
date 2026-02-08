@@ -18,4 +18,6 @@ if [[ -d $HOME/.bashrc.d ]]; then
 fi
 
 # Bash prompt
-PS1='[\u@\h \W]\$ '
+# PS1='[\u@\h \W]\$ '
+
+eval "$(starship init bash)"
