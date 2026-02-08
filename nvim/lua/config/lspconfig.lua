@@ -50,7 +50,7 @@ lspconfig.rust_analyzer.setup({
   capabilities = capabilities,
   settings = {
     ["rust-analyzer"] = {
-      checkOnSave = { command = "clippy" },
+      checkOnSave = { command = "check" },
     },
   },
 })
