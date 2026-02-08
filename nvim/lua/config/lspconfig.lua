@@ -1,71 +1,81 @@
--- config.lspconfig.lua
-local lspconfig = require('lspconfig')
-local mason_lspconfig = require('mason-lspconfig')
+-- Keymaps + buffer options when an LSP attaches
+vim.api.nvim_create_autocmd("LspAttach", {
+  callback = function(args)
+    local bufnr = args.buf
 
--- Function to run when LSP connects to a buffer
-local on_attach = function(client, bufnr)
-  -- Enable completion triggered by <c-x><c-o>
-  vim.api.nvim_buf_set_option(bufnr, 'omnifunc', 'v:lua.vim.lsp.omnifunc')
+    -- completion triggered by <c-x><c-o>
+    vim.bo[bufnr].omnifunc = "v:lua.vim.lsp.omnifunc"
 
-  -- Buffer local mappings.
-  local opts = { noremap=true, silent=true }
-  local buf_set_keymap = function(mode, lhs, rhs)
-    vim.api.nvim_buf_set_keymap(bufnr, mode, lhs, rhs, opts)
-  end
+    local opts = { noremap = true, silent = true, buffer = bufnr }
+    vim.keymap.set("n", "<C-a>", vim.lsp.buf.hover, opts)
+    vim.keymap.set("n", "<C-d><C-e>", vim.lsp.buf.definition, opts)
+    vim.keymap.set("n", "gi", vim.lsp.buf.implementation, opts)
+    vim.keymap.set("n", "<leader>rn", vim.lsp.buf.rename, opts)
+    vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, opts)
+    vim.keymap.set("n", "gr", vim.lsp.buf.references, opts)
+    vim.keymap.set("n", "[d", vim.diagnostic.goto_prev, opts)
+    vim.keymap.set("n", "]d", vim.diagnostic.goto_next, opts)
+    vim.keymap.set("n", "<leader>e", vim.diagnostic.open_float, opts)
+    vim.keymap.set("n", "<leader>q", vim.diagnostic.setloclist, opts)
+  end,
+})
 
-  -- LSP keybindings
-  buf_set_keymap('n', '<C-a>', '<cmd>lua vim.lsp.buf.hover()<CR>')
-  buf_set_keymap('n', '<C-d><C-e>', '<cmd>lua vim.lsp.buf.definition()<CR>')
-  buf_set_keymap('n', 'gi', '<cmd>lua vim.lsp.buf.implementation()<CR>')
-  buf_set_keymap('n', '<leader>rn', '<cmd>lua vim.lsp.buf.rename()<CR>')
-  buf_set_keymap('n', '<leader>ca', '<cmd>lua vim.lsp.buf.code_action()<CR>')
-  buf_set_keymap('n', 'gr', '<cmd>lua vim.lsp.buf.references()<CR>')
-  buf_set_keymap('n', '[d', '<cmd>lua vim.diagnostic.goto_prev()<CR>')
-  buf_set_keymap('n', ']d', '<cmd>lua vim.diagnostic.goto_next()<CR>')
-  buf_set_keymap('n', '<leader>e', '<cmd>lua vim.diagnostic.open_float()<CR>')
-  buf_set_keymap('n', '<leader>q', '<cmd>lua vim.diagnostic.setloclist()<CR>')
-end
-
--- Update capabilities for nvim-cmp
+-- Capabilities for nvim-cmp
 local capabilities = require("cmp_nvim_lsp").default_capabilities()
 
--- Explicit server setup
-lspconfig.lua_ls.setup({
-  on_attach = on_attach,
+-- Configure servers (Neovim 0.11+)
+vim.lsp.config("lua_ls", {
   capabilities = capabilities,
 })
 
-lspconfig.pyright.setup({
-  on_attach = on_attach,
+vim.lsp.config("pyright", {
   capabilities = capabilities,
 })
 
-lspconfig.clangd.setup({
-  on_attach = on_attach,
+vim.lsp.config("clangd", {
   capabilities = capabilities,
 })
 
-lspconfig.rust_analyzer.setup({
-  on_attach = on_attach,
+vim.lsp.config("rust_analyzer", {
   capabilities = capabilities,
   settings = {
     ["rust-analyzer"] = {
-      checkOnSave = { command = "check" },
+      cargo = {
+        allTargets = true,
+        allFeatures = true,
+        loadOutDirsFromCheck = true,
+      },
+      procMacro = { enable = true },
+
+      checkOnSave = true,
+      check = {
+        command = "clippy",
+        extraArgs = {
+          "--",
+          "-W", "clippy::all",
+        },
+      },
     },
   },
 })
 
--- signs
-local signs = { Error = " ", Warn = " ", Hint = " ", Info = " " }
-for type, icon in pairs(signs) do
-  local hl = "DiagnosticSign" .. type
-  vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = "" })
-end
 
+-- Enable the servers you want
+vim.lsp.enable({ "lua_ls", "pyright", "clangd", "rust_analyzer" })
+
+-- Diagnostics (only configure once)
 vim.diagnostic.config({
+  signs = {
+    text = {
+      [vim.diagnostic.severity.ERROR] = " ",
+      [vim.diagnostic.severity.WARN]  = " ",
+      [vim.diagnostic.severity.HINT]  = " ",
+      [vim.diagnostic.severity.INFO]  = " ",
+    },
+  },
   virtual_text = { prefix = "●" },
-  signs = true,
   underline = true,
   update_in_insert = false,
   severity_sort = true,
 })
+
