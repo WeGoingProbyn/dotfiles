@@ -1,0 +1,141 @@
+@import url("../theme/palette.css");
+
+* {
+  font-family: "SauceCodePro Nerd Font", monospace;
+  font-size: 13px;
+}
+
+/* ===== Control Center ===== */
+.control-center {
+  background-color: @glass-strong;
+  border: 1px solid @hairline;
+  border-radius: 16px;
+  margin: 12px;
+  padding: 12px;
+  color: @fg1;
+}
+
+.control-center-list {
+  background: transparent;
+}
+
+.widget-title {
+  color: @fg1;
+  font-size: 16px;
+  margin: 6px 4px 10px 4px;
+}
+.widget-title > button {
+  background-color: rgba(255, 255, 255, 0.05);
+  color: @fg2;
+  border: none;
+  border-radius: 10px;
+  padding: 4px 10px;
+  transition: background-color .2s ease, color .2s ease;
+}
+.widget-title > button:hover {
+  background-color: @card-hover;
+  color: @fg1;
+}
+
+.widget-dnd {
+  color: @fg2;
+  margin: 6px 4px;
+}
+.widget-dnd > switch {
+  background-color: rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  border: none;
+}
+.widget-dnd > switch:checked {
+  background-color: @red;
+}
+.widget-dnd > switch slider {
+  background-color: @fg1;
+  border-radius: 10px;
+}
+
+.widget-inhibitors {
+  color: @fg2;
+  margin: 6px 4px;
+}
+
+/* ===== Individual notifications (in centre and as toasts) ===== */
+.notification-row {
+  background: transparent;
+  padding: 4px 0;
+}
+
+.notification {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid @hairline;
+  border-radius: 12px;
+  margin: 4px 0;
+  padding: 0;
+}
+
+.notification.critical {
+  border-left: 3px solid @red;
+}
+.notification.low {
+  border-left: 3px solid @fg3;
+}
+.notification.normal {
+  border-left: 3px solid @blue;
+}
+
+.notification-content {
+  padding: 10px 12px;
+  color: @fg1;
+}
+
+.notification-content .summary {
+  color: @fg1;
+  font-weight: bold;
+}
+
+.notification-content .body {
+  color: @fg2;
+}
+
+.notification-content .time {
+  color: @fg3;
+  font-size: 11px;
+}
+
+.close-button {
+  background-color: transparent;
+  color: @fg3;
+  border: none;
+  border-radius: 8px;
+  margin: 6px;
+  padding: 2px 6px;
+}
+.close-button:hover {
+  background-color: rgba(252, 97, 141, 0.25);
+  color: @red;
+}
+
+/* Notification action buttons */
+.notification-action {
+  background-color: rgba(255, 255, 255, 0.05);
+  color: @fg1;
+  border: 1px solid @hairline;
+  border-radius: 8px;
+  margin: 4px;
+  padding: 4px 10px;
+}
+.notification-action:hover {
+  background-color: @card-hover;
+}
+
+/* ===== Toast (floating) notifications ===== */
+.floating-notifications.background .notification-row {
+  background: transparent;
+}
+.floating-notifications.background .notification {
+  background-color: @glass-strong;
+  border: 1px solid @hairline;
+  border-radius: 12px;
+  margin: 6px 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
+}
